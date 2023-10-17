@@ -519,7 +519,7 @@ public class Pizza extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMegseMouseExited
 
     private void btnMegseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMegseActionPerformed
-        JOptionPane.showMessageDialog(rootPane, "Tesztverzió");
+        JOptionPane.showMessageDialog(rootPane, "Tesztverzió", "Figyelem", 2);
         System.exit(0);        // TODO add your handling code here:
     }//GEN-LAST:event_btnMegseActionPerformed
 
