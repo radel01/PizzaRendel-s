@@ -386,6 +386,7 @@ public class Pizza extends javax.swing.JFrame {
         cmbDarab.setMinimumSize(new java.awt.Dimension(60, 22));
         cmbDarab.setPreferredSize(new java.awt.Dimension(60, 22));
 
+        lblReszosszeg.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         lblReszosszeg.setText("Részösszeg:");
 
         txtReszosszeg.setDisabledTextColor(new java.awt.Color(0, 0, 0));
@@ -488,7 +489,7 @@ public class Pizza extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(pnlFeltet, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 299, Short.MAX_VALUE))
                 .addGap(10, 10, 10))
         );
         layout.setVerticalGroup(
@@ -519,7 +520,7 @@ public class Pizza extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMegseMouseExited
 
     private void btnMegseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMegseActionPerformed
-        JOptionPane.showMessageDialog(rootPane, "Tesztverzió", "Figyelem", 2);
+        //JOptionPane.showMessageDialog(rootPane, "Tesztverzió", "Figyelem", 2);
         System.exit(0);        // TODO add your handling code here:
     }//GEN-LAST:event_btnMegseActionPerformed
 
@@ -533,7 +534,7 @@ public class Pizza extends javax.swing.JFrame {
    
     String uzenet;
     if((vanKozepesMeretValasztva || vanNagyMeretValasztva)&&(vanVekonyTesztaValasztva || vanVastagTesztaValasztva || vanFitneszTesztaValasztva)){
-        uzenet= "Rendelését befogadtuk!";
+        uzenet= "A pizza ára 1500 Ft!";
     }else{
         uzenet= "Nincs méret vagy típus kiválasztva!";
     }
